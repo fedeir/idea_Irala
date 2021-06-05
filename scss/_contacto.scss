@@ -1,0 +1,91 @@
+$ancho:100%;
+$colorTW:blue;
+$colorIG:rgb(255, 0, 191);
+$colorWA:rgba(5, 226, 53, 0.925);
+
+// Contenedor de formlario decontacto
+.contenedorForm{
+    margin: auto;
+    background:  linear-gradient(to top, #000, #ccc);
+    height: 60vh;
+    width:$ancho/ 4;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContacto{
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        input{
+            border-radius: 5px;
+            border-style: none;
+        }
+        textarea{
+            border-radius: 5px;
+            min-height:80px ;
+        }
+        .boton{
+            width: 100px;
+            height: 25px;
+            align-self: center;
+        }
+        
+    }
+}
+
+
+
+
+.redes{
+    width: 50%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 30% 30% 33%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "titulo . ."
+        "tw ig wp"
+    ;
+
+    .tituloRedes{
+        grid-area: titulo;
+        color: white;
+    }
+
+    @each $red in tw, ig, wp{
+       .#{$red} {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            color: white;
+            display: flex ;
+            justify-content: center;
+            align-items: center;
+            grid-area:#{$red};
+
+            @if $red == tw {
+                background-color: $colorTW;
+                
+            } @else if $red == ig {
+                background-color: $colorIG;
+            } @else if $red == wp {
+                background-color: $colorWA;
+            } 
+        }
+    }
+    
+}

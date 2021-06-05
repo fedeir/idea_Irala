@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none; }
+
+.body {
+  font-family: 'Itim', cursive;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between; }
+
+.fondo {
+  /*Patron de fondo*/
+  background-color: #556;
+  background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; }
+
+.contenedorForm {
+  margin: auto;
+  background: linear-gradient(to top, #000, #ccc);
+  height: 60vh;
+  width: 25%;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.formContacto {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center; }
+  .formContacto div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .formContacto div input {
+      border-radius: 5px;
+      border-style: none; }
+    .formContacto div textarea {
+      border-radius: 5px;
+      min-height: 80px; }
+    .formContacto div .boton {
+      width: 100px;
+      height: 25px;
+      align-self: center; }
+
+.redes {
+  width: 50%;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 30% 30% 33%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "titulo . ." "tw ig wp"; }
+  .redes .tituloRedes {
+    grid-area: titulo;
+    color: white; }
+  .redes .tw {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: tw;
+    background-color: blue; }
+  .redes .ig {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: ig;
+    background-color: #ff00bf; }
+  .redes .wp {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: wp;
+    background-color: rgba(5, 226, 53, 0.925); }
+
+.articuloPS {
+  min-height: 30vh;
+  background-color: gray;
+  border: 1px solid black; }
+
+.contenedor_xbox {
+  margin: 5px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 5px;
+  justify-items: center;
+  /* grid-template-areas:
+        "clas 360"
+        "one series"
+    ; */ }
+  .contenedor_xbox .tarjeta {
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 2px;
+    /* background-color:rgba(153, 153, 170, 0.6); */
+    background: linear-gradient(to top, #000, #ccc);
+    width: 60%;
+    color: white;
+    transition: all 1s;
+    /*Animaciones*/
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: 1; }
+  .contenedor_xbox .tarjeta__img {
+    height: 200px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 5px; }
+  .contenedor_xbox .tarjeta:hover {
+    transform: scale(1.2, 1.2); }
+
+@keyframes aparecer {
+  0% {
+    transform: scale(1.4, 1.4);
+    opacity: 0; }
+  50% {
+    transform: scale(1.3, 1.3);
+    opacity: 0.6; }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1; } }
