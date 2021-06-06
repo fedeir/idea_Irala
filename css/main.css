@@ -2,14 +2,17 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  list-style: none; }
+  list-style: none;
+  font-family: 'Open Sans', sans-serif; }
 
 .body {
-  font-family: 'Itim', cursive;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between; }
+
+.contenedorPrincipal {
+  min-height: 100vh; }
 
 .fondo {
   /*Patron de fondo*/
@@ -19,38 +22,9 @@
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; }
 
 .contenedorForm {
-  margin: auto;
   background: linear-gradient(to top, #000, #ccc);
-  height: 60vh;
-  width: 25%;
   border-radius: 5px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.formContacto {
-  height: 70%;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  justify-items: center; }
-  .formContacto div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-    .formContacto div input {
-      border-radius: 5px;
-      border-style: none; }
-    .formContacto div textarea {
-      border-radius: 5px;
-      min-height: 80px; }
-    .formContacto div .boton {
-      width: 100px;
-      height: 25px;
-      align-self: center; }
+  padding: 10px; }
 
 .redes {
   width: 50%;
@@ -104,27 +78,22 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   gap: 5px;
-  justify-items: center;
-  /* grid-template-areas:
-        "clas 360"
-        "one series"
-    ; */ }
+  justify-items: center; }
   .contenedor_xbox .tarjeta {
     border-radius: 5px;
     margin-bottom: 5px;
     padding: 2px;
-    /* background-color:rgba(153, 153, 170, 0.6); */
     background: linear-gradient(to top, #000, #ccc);
     width: 60%;
     color: white;
     transition: all 1s;
     /*Animaciones*/
     animation-name: aparecer;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-iteration-count: 1; }
   .contenedor_xbox .tarjeta__img {
-    height: 200px;
-    width: 80%;
+    height: 100px;
+    width: 70%;
     margin-left: 10%;
     border-radius: 5px; }
   .contenedor_xbox .tarjeta:hover {
