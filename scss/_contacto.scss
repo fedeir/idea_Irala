@@ -5,44 +5,44 @@ $colorWA:rgba(5, 226, 53, 0.925);
 
 // Contenedor de formlario decontacto
 .contenedorForm{
-    margin: auto;
+    // margin: auto;
     background:  linear-gradient(to top, #000, #ccc);
-    height: 60vh;
-    width:$ancho/ 4;
+    // height: 60vh;
+    // width:$ancho/ 4;
     border-radius: 5px;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
 }
 
 .formContacto{
-    height: 70%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-items: center;
+    // height: 70%;
+    // width: 70%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+    // justify-items: center;
 
     div{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-around;
 
-        input{
-            border-radius: 5px;
-            border-style: none;
-        }
-        textarea{
-            border-radius: 5px;
-            min-height:80px ;
-        }
-        .boton{
-            width: 100px;
-            height: 25px;
-            align-self: center;
-        }
+        // input{
+        //     border-radius: 5px;
+        //     border-style: none;
+        // }
+        // textarea{
+        //     border-radius: 5px;
+        //     min-height:80px ;
+        // }
+        // .boton{
+        //     width: 100px;
+        //     height: 25px;
+        //     align-self: center;
+        // }
         
     }
 }

@@ -138,33 +138,37 @@
       </header>
       <main>
         
-        <div class="contenedorForm">
+        <div class="contenedorForm container  col-12 col-md-8 col-lg-6">
           <h2>Contactate</h2>
-          <form action="#" method="post" class="formContacto">
-            <div>
+
+          <form action="#" method="post" class="formContacto col-12 d-flex flex-column justify-content-start">
+            
+            <div class="m-1">
               <label for="name">Nombre</label>
-              <input type="text" name="name" />
+              <input type="text"  class="form-control " name="name" />
             </div>
-            <div>
+            <div class="m-1">
               <label for="mail">Mail</label>
-              <input type="email" name="mail" />
+              <input type="email"  class="form-control" name="mail" />
             </div>
-            <div>
+            <div class="m-1">
               <label for="whatsapp">whatsapp</label>
-              <input type="tel" name="whatsapp" />
+              <input type="tel" class="form-control"  name="whatsapp" />
             </div>
-            <div>
+            <div class="m-1">
               <label for="comentario">Comentario</label>
-              <textarea
+              <textarea  class="form-control" 
                 name="comentario"
                 placeholder="Escriba su comentario/consulta"
               ></textarea>
             </div>
-            <div>
+            <div class="align-self-center bg-dark ">
               <input type="button" value="Enviar" class="boton" />
             </div>
+            
           </form>
-          <div class="redes">
+
+          <div class="redes ">
             <h2 class="tituloRedes">redes</h2>
             <div class="tw">TW</div>
             <div class="ig">IG</div>
