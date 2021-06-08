@@ -144,26 +144,11 @@
   border: 1px solid black;
 }
 
-.contenedor_xbox {
-  margin: 5px 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-  gap: 5px;
-  justify-items: center;
-}
-
 .contenedor_xbox .tarjeta {
-  border-radius: 5px;
-  margin-bottom: 5px;
-  padding: 2px;
+  min-height: 30vh;
+  border: 1px solid black;
   background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#ccc));
   background: linear-gradient(to top, #000, #ccc);
-  width: 60%;
-  color: white;
   -webkit-transition: all 1s;
   transition: all 1s;
   /*Animaciones*/
@@ -175,14 +160,7 @@
           animation-iteration-count: 1;
 }
 
-.contenedor_xbox .tarjeta__img {
-  height: 100px;
-  width: 70%;
-  margin-left: 10%;
-  border-radius: 5px;
-}
-
-.contenedor_xbox .tarjeta:hover {
+.contenedor_xbox .tarjeta__img:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
 }
