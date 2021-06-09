@@ -1,6 +1,12 @@
 .articuloPS{
     min-height: 30vh;
-    background-color: gray;
+    
+    // background:  linear-gradient(to top, #000, #ccc);
+    background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
     border: 1px solid black;
+    color: white;
+    h2{
+        color: black;
+    }
 }
 
